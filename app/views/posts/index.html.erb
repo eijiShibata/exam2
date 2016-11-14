@@ -9,8 +9,8 @@
       <p><%= post.user.name %></p>
       <p><%= post.title %></p>
       <p><%= post.content %></p>
-      <%= link_to "編集する", edit_post_path(post.id) %>
-      <%= link_to "削除する", post_path(post.id), method: :delete, data: { confirm: '本当に削除していいですか？'} %>
+      <%= link_to "編集する", edit_post_path(post.id), class: 'btn btn-default btn-sm btn-success' %>
+      <%= link_to "削除する", post_path(post.id), method: :delete, data: { confirm: '本当に削除していいですか？'}, class: 'btn btn-default btn-sm btn-danger' %>
     </div>
     <% end %>
   </div>

@@ -4,13 +4,25 @@
 
 <section class = "matters container-fluid">
   <div class = "row">
-    <div class = "matter1 col-md-3 hidden-sm hidden-xs">
-      <p>Instagram風アプリへようこそ！</p>
+    <div class = "matter1 col-sm-4 hidden-xs">
+      <img src = "<%= asset_path"top_smartphone.jpg" %>">
     </div>
 
-    <div class = "matter2 col-md-6 col-xs-10">
-      <p>ログイン機能（仮）</p>
-      <p><%= link_to "ログイン", posts_path %></p>
+    <div class = "matter2 col-sm-6 col-xs-10">
+      <h2>Instagram風アプリを使う</h2><br><br>
+        <ul>
+          <li>
+            <h4>アカウントをお持ちの方はこちら<br>
+              <strong><%= link_to "ログイン", new_user_session_path  %></strong>
+            </h4>
+          </li>
+          <br><br>
+          <li>
+            <h4>アカウントをお持ちでないですか？<br>
+              <strong><%= link_to "サインアップ", new_user_registration_path %></strong>
+            </h4>
+          </li>
+        </ul>
     </div>
   </div>
 </section>
